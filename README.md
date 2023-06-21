@@ -1,5 +1,5 @@
 # learning-lua
-This repo will act as the home of my self-teaching of Lua - including my created scripts, notes, and updates on my progress.
+This repo will act as the home of my journey to learn Lua - including my created scripts, notes, and updates on my progress.
 https://www.lua.org/
 
 ## 20 June 2023
