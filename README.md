@@ -46,7 +46,7 @@ Module 2-1 starts off going over data types and their purpose, such as represent
 
 "Can you think of any other categories of data in real life? What about in the applications you use?"
 
-My response to this is vectors. Vectors use numbers within them but have a precise definition and tons of applications. For example, Unity uses Vector3 to represent an object's position and many other things.
+My response to this is vectors. Vectors use numbers within them but have a precise definition and tons of applications. For example, Unity uses Vector3 to represent an object's position and many other things. There was no coding assignment for Module 2-1.
 
 Module 2-2 teaches that Lua organizes data into four basic data types:
 
@@ -109,3 +109,42 @@ The script [module-2-3-using-type-function.lua](https://github.com/julch94/learn
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/58de7df1-f870-4677-8d5f-e368ef613269)
 
+Module 2-4 covers calculating with arithmetic operators. 
+
+*    Addition - x+y - adds two numbers
+*    Subtraction - x-y - subtracts two numbers
+*    Multiplication - x*y - multiplies two numbers
+*    Division - x/y - divides two numbers
+*    Exponential - x^y - takes the exponent of two numbers
+*    Remainder/Modulo/Modulus - x%y - gives the remaining leftover after dividing two numbers
+*    Negation - -x - reverse the sign value of a number
+  
+An expression uses operators to transform data and evaluates to a new value. For example, the express 2+3 evaulates to 5.
+
+Module 2-4's assignment:
+
+1. Ji-Eun's shopping cart has two items - one priced at $10.95 and the other at $20.99. Add the prices together and print her total.
+2. Luca's ice scream store has 300 ice cream cones. Luca sells 298 ice cream cones. Subtract the number of ice cream cones and print the number remaining to share with his friend Bruno.
+3. Billy charges $50 per cowboy hat and sold 49. Multiply and print how much money he made.
+4. Sage is holding a pizza party and bought 8 pizzas for $96. Divide and print how much one pizza costs.
+5. Cairo promised Layla his leftover marbles. He has 7 he must divide among 2 other friends. Determine and print how many marbles are left over for Layla.
+
+The codecademy built-in compiler wanted precisely followed instructions but I wanted to actually use variables for these values and then evaluate those variables to print the results. The script [module-2-4-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-4-operators.lua) was created to complete this assignment and the results are below:
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/a53cb368-a615-4aac-b90c-ad8f5bbe5e8a)
+
+Module 2-5 was a review of data types and operators. 
+* Basic Data Types: Number, String, Nil, Boolean
+* String: "this" or 'this'
+* Operators: +, -, *, /, ^, %, - (first "-" is subtraction, second is negation)
+* Use the type() function to determine a value's type when needed
+
+Additionally, some practice challenges were provided:
+
+1. Use print() to print a value of each basic data type that you don't already have in your code
+2. Modify the print() statements you made by adding arithmetic operators or changing the the data type by converting them into the string data type.
+3. Output the type of each of your values after you made modifications.
+
+The script [module-2-5-reviewing-data-types-and-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-5-reviewing-data-types-and-operators.lua) was created to complete these challenges and the results are below:
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/3e00d6fd-5de3-4b5d-a385-ecacde7e048f)
