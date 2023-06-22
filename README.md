@@ -42,4 +42,70 @@ The key takeaway is the hyphens at the end do nothing. It's the closing brackets
 ## 21 June 2023
 [Module 2 - Variables and Data](https://www.codecademy.com/learn/learn-lua/modules/variables-and-data/cheatsheet)
 
-Start here to resume: https://www.codecademy.com/courses/learn-lua/lessons/lua-data-types-and-operators/exercises/lua-categorizing-data-with-types
+Module 2-1 starts off going over data types and their purpose, such as representing numbers, text, and truth statements. It also states how the rest of the module will go over the different data types, checking the type of data, and how to manipula the data. Module 2-1 Assignment:
+
+"Can you think of any other categories of data in real life? What about in the applications you use?"
+
+My response to this is vectors. Vectors use numbers within them but have a precise definition and tons of applications. For example, Unity uses Vector3 to represent an object's position and many other things.
+
+Module 2-2 teaches that Lua organizes data into four basic data types:
+
+Number - positive, negative, and/or decimal values --> -5.2 or 3
+
+String - characters in single or normal quotes --> "hello" or 'hello'
+
+Boolean - true or false
+
+Nil - A representation of no value. Similar to NULL.
+
+Additionally, not yet covered here, there are four complex data types:
+
+Tables, Functions, Userdata, and Threads
+
+The assignment from Module 2-2 was to:
+
+1. First print a number representing how many languages you can speak.
+2. On a new line, print a string that represents my favorite movie.
+3. On a new line, print a boolean that represents whether or not I ate breakfast this morning.
+4. Finally, on a new line, print nil to the output terminal.
+   
+My completed assignment for Module 2-2 is in [module-2-2-simple-data-type-printing.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-2-simple-data-type-printing.lua). Running the script yields this result:
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/768edb01-bd00-4d78-a479-4ce45f47cd81)
+
+In Module 2-3 the course dives deeper into number and string syntax. 
+
+Key notes include:
+
+*    Strings can use either " or ' , as long as they match:
+        GOOD:    print("test")
+     
+        GOOD:    print('test')
+     
+        BAD:    print("test')
+
+*    To include a single or double quote character in a string, add a \ in front of that character:
+  
+~~~
+     print("\"FOUR" -Jhin\")
+~~~
+
+*    Use type() to help figure out what type a value is. Example:
+
+~~~
+      print(type("What am I?")
+~~~
+
+This will return string
+
+The assignment for Module 2-3 was as follows:
+
+  1. Pick a number and use type() to print the type of the number picked.
+  2. Next, add quote around the number and print the type again.
+  3. On a new line, use the type() function to print the type of the value true.
+  4. Next, add qoutes around true and check the type again.
+
+The script [module-2-3-using-type-function.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-3-using-type-function.lua) was created to complete this assignment and the results are below:
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/58de7df1-f870-4677-8d5f-e368ef613269)
+
