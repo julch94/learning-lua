@@ -276,3 +276,23 @@ The assignment for Module 2-12 was as follows:
 This script [module-2-12-type-coercion.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-12-type-coercion.lua) was created to complete the assignment and the results are below. Additionally, the answer to #5's question is that it doesn't add the numerical value - it sticks both numbers together so 13 and 15 become 1315.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/c5f69635-f9e8-41da-b3c9-d6b36b853ad4)
+
+Module 2-13 covers the review of variables, what they are, how they relate to data types, how to define, reassign, concatenate, and coerce them. 
+
+The review also contains an some challenges as follows:
+
+1. Think of a program you'd want to make - what type of data should the progam store?
+2. Create at least three variables and assign values to them.
+3. Display these variables with concatenation to describe what they are.
+4. For any number data, update your variables with arithmetic operators.
+5. Explore what happens when you concatenate variables you have with different data types.
+
+I've included my answers to these questions and tackled the code portions of these challenges in this script [module-2-13-variable-review.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-13-variable-review.lua) The results are below:
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/1591ec85-a300-4598-b847-ab8baf164386)
+
+## 22 June 2023
+[Module 3 - Conditionals & Logic](https://www.codecademy.com/learn/learn-lua/modules/conditionals-logic/cheatsheet)
+
+Module 3-1 starts off with control structures.
+[** START HERE **](https://www.codecademy.com/courses/learn-lua/lessons/conditionals-logic-Lua/exercises/introduction-to-conditional-and-logical-statements)
