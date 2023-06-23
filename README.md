@@ -292,7 +292,16 @@ I've included my answers to these questions and tackled the code portions of the
 ![image](https://github.com/julch94/learning-lua/assets/74890109/1591ec85-a300-4598-b847-ab8baf164386)
 
 ## 22 June 2023
+Traveled to Disney World - I did some reading ahead on the Codecademy GO app.
+
+## 23 June 2023
 [Module 3 - Conditionals & Logic](https://www.codecademy.com/learn/learn-lua/modules/conditionals-logic/cheatsheet)
 
-Module 3-1 starts off with control structures.
-[** START HERE **](https://www.codecademy.com/courses/learn-lua/lessons/conditionals-logic-Lua/exercises/introduction-to-conditional-and-logical-statements)
+Module 3-1 What is a control structure?
+
+This module describes a control structure as a series of decisions/checks to determine how to proceed. Conditional structures are of conditional statements: If a condition is met, then do X. These can be used to cover complex decision trees. Variables and logical operators are used to evaluate these conditional statements within the control structure.
+
+Following the example provided by the module, today is not a weekday so I get up at 6:30. It is raining  so I will wear a raincoat.k
+
+Module 3-2
+
