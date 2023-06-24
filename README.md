@@ -380,4 +380,16 @@ The assignment for 3-5 was to create a program that prints out a different sente
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/fc6b7b40-69bc-4f26-918f-e9360c1dd1ca)
 
+Module 3-6 covers logical operators
+
+Logical operators can be used to combine conditional statements - for example, if today is Tuesday AND it's after 6 PM, it's time for Taco Tuesday. This is better than a nested set of if statements (if it's Tuesday --> if it's after 6 PM). There are three logical operators: and, or, and not. They are also called boolean operators.
+
+*    x and y - returns true if x and y are true
+*    x or y - returns true if x or y are true
+*    not x - returns true if x is false
+*    Otherwise, these all return false
+
+The assignment for module 3-6 was to write a program that grades test scores. I added some extra print statements and an else to catch failing scores, and ran through all planned resulting cases. The results of the script [module-3-6-logical-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-6-logical-operators.lua) are below.
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/7df4a507-e64a-4ad3-81b9-9b3ce3984140)
 
