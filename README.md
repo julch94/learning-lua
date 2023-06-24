@@ -393,3 +393,64 @@ The assignment for module 3-6 was to write a program that grades test scores. I 
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/7df4a507-e64a-4ad3-81b9-9b3ce3984140)
 
+Module 3-7 covers order of operations
+
+Lua operators are evaluated in the following order (from top to bottom):
+*    ^
+*    not
+*    *, /
+*    +, -
+*    <, >, <=, >=, ~=, ==
+*    and
+*    or
+
+Lua will execute from left to right through a line of code when executing repeated or multiple operators of the same level (like < and >). The example in the module is the if statement:
+
+~~~
+score = 50
+if not score == 100 then
+    print("Score not exactly 100!"
+end
+~~~
+
+Due to Lua's order of operations, not score will be evaluted first. Lua handles not in front a number as always returning flase so we have 
+
+~~~
+score = 50
+if false == 100 then
+    print("Score not exactly 100!"
+end
+~~~
+
+100 is not equal to false, so no matter what we won't see our print statement which is a bug. We could use ~= to resolve this easily:
+
+~~~
+score = 50
+if score ~= 100 then
+    print("Score not exactly 100!"
+end
+~~~
+
+This will work as intended and print our message unless score is equal to 100.
+
+The assignment for module 3-7 was to guess at some order of operations for the following code:
+
+~~~
+-- You must be hungry to get food. In addition, you must either have at least $10 or have a friend pay.
+isHungry = false
+cash = 5
+friendIsPaying = true
+if isHungry and cash > 10 or friendIsPaying then
+  print("We are getting food!")
+end
+~~~
+
+Because we are not hungry, we should not get food no matter what - regardless of if we have money or a friend to cover our food. However, due to the Lua order of operations, > --> and --> or, we can simplify the if statement to:
+
+isHungry and false or friendIsPaying --> false or friendIsPaying --> true
+
+After running the example, I was correct and we got food - which means our code is buggy.
+
+## 24 June 2023
+
+Module 3-8 covers changing the order of operations
