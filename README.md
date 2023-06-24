@@ -297,11 +297,33 @@ Traveled to Disney World - I did some reading ahead on the Codecademy GO app.
 ## 23 June 2023
 [Module 3 - Conditionals & Logic](https://www.codecademy.com/learn/learn-lua/modules/conditionals-logic/cheatsheet)
 
-Module 3-1 What is a control structure?
+Module 3-1 covers the intro to control structures
 
 This module describes a control structure as a series of decisions/checks to determine how to proceed. Conditional structures are of conditional statements: If a condition is met, then do X. These can be used to cover complex decision trees. Variables and logical operators are used to evaluate these conditional statements within the control structure.
 
 Following the example provided by the module, today is not a weekday so I get up at 6:30. It is raining  so I will wear a raincoat.k
 
-Module 3-2
+Module 3-2 covers conditionals and logic
+
+if statements start the foundation of every control structure. An if statement requires a boolean expression (evaluates to true or false) and a code block (code that is executed if boolean expression is true, and is skipped if said expression is false). 
+
+The syntax for an if statement (and a preceding initial value of the variable used) looks like this:
+
+~~~
+isExample = true
+if isExample then
+    print("This is an example.")
+end
+~~~
+
+The code between then and end should be indented for readability.
+
+The assignment for Module 3-2 is as follows:
+
+1. Adding onto the example, add an if statement with isSunny as the condition, and print a statement when isSunny is true. Note which print statements are executed.
+2. Add a print statement after the if statement: "Good to know! Thanks!" and then change the value of isSunny from true to false when it's initialized. Run again and note what's printed.
+
+For question 1, all of the statements were printed because isSunny evaluated to true. On question 2, however, isSunny was false so "It is sunny outside!" did NOT print but the print statements before and after the if statement did. The results of the script [module-3-2-conditionals-and-logic.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-2-conditionals-and-logic.lua) are below.
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/6a8640ef-d659-4682-bf18-d847a9e7ea66)
 
