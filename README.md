@@ -352,3 +352,23 @@ end
 The assignment for this module was to create a program that initialized numerical values for A and B and then evaluated and printed which one was larger. The results of the script [module-3-3-comparison-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-3-comparison-operators.lua) are below.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/fa72b6ed-af65-4fd6-ae46-fbb1e9821213)
+
+Module 3-4 covers the else statement
+
+The summary of the else statement is if we have a condition to check and want to do something different if its false - this prevents the need for an if statement for each and every case. For example:
+
+~~~
+isAlive = true
+if isAlive then
+    print("Current HP = ")
+else
+    print("YOU ARE DEAD.")
+end
+~~~
+
+The key note here is that the else is paired with the if and is closed by the same end keyword.
+
+The assignment from module 3-4 was to create a program for grading an assignment based on a score. The results of the script [module-3-3-comparison-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-3-comparison-operators.lua) are below.
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/5d0ccb1a-621f-4129-b2b0-f7172cb81ee3)
+
