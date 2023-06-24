@@ -368,7 +368,16 @@ end
 
 The key note here is that the else is paired with the if and is closed by the same end keyword.
 
-The assignment from module 3-4 was to create a program for grading an assignment based on a score. The results of the script [module-3-3-comparison-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-3-comparison-operators.lua) are below.
+The assignment from module 3-4 was to create a program for grading an assignment based on a score. The results of the script [module-3-4-else-statement.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-4-else-statement.lua) are below.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/5d0ccb1a-621f-4129-b2b0-f7172cb81ee3)
+
+Module 3-5 covers the elseif statement
+
+elseif is used when we need to check additional options after an initial check. elseif is setup just like an if statement but still lives within the total codeblock as the original if statement, and that codeblock ends with the end keyword. An elseif statement MUST come after an if statement or another elseif statement. Only the first if or elseif that evalutes to true in a codeblock is executed and the rest are skipped.
+
+The assignment for 3-5 was to create a program that prints out a different sentences based on the user's score. The results of the script [module-3-5-elseif-statement.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-5-elseif-statement.lua) are below.
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/fc6b7b40-69bc-4f26-918f-e9360c1dd1ca)
+
 
