@@ -454,3 +454,43 @@ After running the example, I was correct and we got food - which means our code 
 ## 24 June 2023
 
 Module 3-8 covers changing the order of operations
+
+Parentheses allow us to control the order the operations in Lua. The part of an expression surrounded in parentheses will execute first before it's used with another expression. For example:
+
+~~~
+cash = 5
+isHungry = false
+friendisPaying = true
+
+if isHungry and (cash > 10 or friendIsPaying) then
+    print("We are getting food!"
+end
+~~~
+
+this simplifies to: isHungry and (false or friendIsPaying) --> isHungry and true --> false. This is correct! We could also rearrange it like so to match the order operations: (cash > 10 or friendIsPaying) and isHungry
+
+Parentheses can also help with readability, even when order of operations don't need to be changed. A good rule of thumb is to use parentheses with logical operator groupings:
+
+~~~
+if(cardsInHand > 0) and (ismyTurn or hasInstantSpell) then
+    print("Would you like to play a card?")
+end
+~~~
+
+The assignment for this module was to create a script that tells the user whether it's t-shirt weather or if they need to wear a jacket based on the temperature, if it's cloudy, and if it's rainy. The script [module-3-8-changing-order-of-operations.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-8-changing-order-of-operations.lua) was created for this and the results are below, which match the expected outputs based on the truth table provided by the module (also below).
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/00f90295-76b9-431d-9cf8-502801052660)
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/0dbf5b19-3fc9-4705-807f-0115cedda298)
+
+Module 3-9 covers the review of conditionals and logic
+
+A control structure is code that makes a decision based on one or more true / false statements. Conditional statements make up control structures and include if, elseif, and else statements. The first conditional statement to return true breaks out of the code block and the rest will not be checked. A code block is a grouping of code - control structures determine if or when said code will be executed. Boolean expressions are true or false and are used by conditional statements to determine if the code block should be executed. Comparison operators compare values and evaluate to true or false. Logical operators take two boolean variables and evaluate to either true or false. Lua uses an order of operations which can be reassigned using parentheseses. 
+
+## 25 June 2023
+
+[Module 4 - Functions](https://www.codecademy.com/learn/learn-lua/modules/functions/cheatsheet)
+
+Module 4-1 covers the introduction to functions
+
+In this module...
