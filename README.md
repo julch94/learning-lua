@@ -584,3 +584,21 @@ The script [module-4-7-practice-with-functions.lua](https://github.com/julch94/l
 
 Module 4-8 covers built-in Lua functions
 
+*    string function library
+    *    example: string.upper() - converts a string to all uper cases
+*    math function library
+    *    example: math.min() - returns the smaller of two numbers
+
+There are many built-in functions which can be found by browsing through the Lua library at [http://lua-users.org/wiki/TutorialDirectory](http://lua-users.org/wiki/TutorialDirectory).
+
+The assignment for this module was to browse the library for documentation on string.len and then use it to print the length of "Hello there!" in a custom function called printStringLength(). The length should be 12 which as shown in the results of the script [module-4-8-built-in-lua-functions.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-8-built-in-lua-functions.lua) below, was correct.
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/6c5fc65d-af7f-44f0-bf95-1ca71a7c7dbf)
+
+Module 4-9 covers the review of functions
+
+Functions are important for code-writing efficiency, cleanliness, and clarity. Functions containthe function keyword, a name, parameter(s), the return key word, the end key word, and are called using arguments.
+
+## Conclusion of codecademy Lua intro course
+
+This concludes my very brief introduction course on Lua. I would next like to take a course going over how Lua is able to work closely with C++ applications, as my understanding is that many video games do this. In short, the codecademy course was OK - it wasn't very transparent on what portions of the course were free, but it provided an in-browswer editor and terminal which were convenient for before I got a hang of creating and running Lua scripts on my own machine. I gained a very elemantary understanding of how to go and make some basic scripts with the language, which works well with my existing understanding of other programming languages.
