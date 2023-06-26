@@ -4,9 +4,20 @@ https://www.lua.org/
 
 # Table of Contents
 
-[Setup](#setting-up-lua-on-windows-10)
+<!-- TOCs generated with https://github.com/derlin/bitdowntoc) -->
 
-# *20 June 2023*
+- [Setting up Lua on Windows 10](#setting-up-lua-on-windows-10)
+- [Codecadamy Learn Lua Course](#codecadamy-learn-lua-course)
+  *  [Learn Lua Course Syllabus](#learn-lua-course-syllabus)
+  *  [Module 1 - Introduction to Lua](#module-1---introduction-to-lua)
+  *  [Module 2 - Variables and Data](#module-2---variables-and-data)
+  *  [Module 3 - Conditionals & Logic](#module-3---conditionals--logic)
+  *  [Module 4 - Functions](#module-4---functions)
+  *  [Conclusion of codecademy Lua intro course](#conclusion-of-codecademy-lua-intro-course)
+- [Some potential resources for learning how to embedd Lua in C++:](#some-potential-resources-for-learning-how-to-embedd-lua-in-c)
+- [Additional Ideas for what's next](#additional-ideas-for-whats-next)
+
+<!-- TOC end -->
 
 ## Setting up Lua on Windows 10
 
@@ -15,6 +26,73 @@ Created [*how_to_setup_lua.txt*](https://github.com/julch94/learning-lua/blob/ma
 ## Codecadamy Learn Lua Course
 
 Next up is to start taking the [Codecadamy Learn Lua Course](https://www.codecademy.com/learn/learn-lua). The course has 4 main (free) modules and takes about 8 hours, so 2 hours per module split over about a week. My objective is to complete all scripts outside of the codecadamy browser, on my own machine, and document them (along with their results) on this repo.
+
+## Learn Lua Course Syllabus
+- [Module 1 - Introduction to Lua](#module-1---introduction-to-lua)
+  * [Single Line Comments](#single-line-comments)
+  * [Multi-line Comments](#multi-line-comments)
+  * [Module 1-6 Assignment - Letter to Self](#module-1-6-assignment---letter-to-self)
+  * [Module 1 Recap and a note on comment syntax](#module-1-recap-and-a-note-on-comment-syntax)
+- [Module 2 - Variables and Data](#module-2---variables-and-data)
+  * [Module 2-1 - Data Types and their Purpose](#module-2-1---data-types-and-their-purpose)
+  * [Module 2-1 Assignment - Real Life Applications of Data Categories](#module-2-1-assignment---real-life-applications-of-data-categories)
+  * [Module 2-2 - Basic  and Complex Data Types](#module-2-2---basic--and-complex-data-types)
+  * [Module 2-2 Assignment -  Simple Data Type Printing](#module-2-2-assignment----simple-data-type-printing)
+  * [Module 2-3 Number and String Syntax](#module-2-3-number-and-string-syntax)
+  * [Module 2-3 Assignment -  Using the type() Function](#module-2-3-assignment----using-the-type-function)
+  * [Module 2-4 - Arithmetic Operators](#module-2-4---arithmetic-operators)
+  * [Module 2-4 Assignment - Shopping Calculations](#module-2-4-assignment---shopping-calculations)
+  * [Module 2-5 - Review of Data Types and Operators](#module-2-5---review-of-data-types-and-operators)
+  * [Module 2-5 - Practice Challenges with Data Types and Operators](#module-2-5---practice-challenges-with-data-types-and-operators)
+  * [Module 2-6 - Introduction to Variables](#module-2-6---introduction-to-variables)
+  * [Module 2-6 Assignment - Variable and Data Examples](#module-2-6-assignment---variable-and-data-examples)
+  * [Module 2-7 - Defining Variables](#module-2-7---defining-variables)
+  * [Module 2-7 Assignment - High Score](#module-2-7-assignment---high-score)
+  * [Module 2-8 - Using type() with Variables](#module-2-8---using-type-with-variables)
+  * [Module 2-8 Assignment - Printing Variables and their Type](#module-2-8-assignment---printing-variables-and-their-type)
+  * [Module 2-9 - Variable Reassignment](#module-2-9---variable-reassignment)
+  * [Module 2-9 Assignment - High Score and Name](#module-2-9-assignment---high-score-and-name)
+  * [Module 2-10 - Using Arithmetic Operators with Variables](#module-2-10---using-arithmetic-operators-with-variables)
+  * [Module 2-10 Assignment - Modifying Scores](#module-2-10-assignment---modifying-scores)
+  * [Module 2-11 - Concatenation](#module-2-11---concatenation)
+  * [Module 2-11 Assignment - Printing a Player's Name With their Score](#module-2-11-assignment---printing-a-players-name-with-their-score)
+  * [Module 2-12 - Type Coercion in Concatenation and Arithmetic Operations](#module-2-12---type-coercion-in-concatenation-and-arithmetic-operations)
+  * [Module 2-12 Assignment - Testing Concatenation and Coercion](#module-2-12-assignment---testing-concatenation-and-coercion)
+  * [Module 2-13 - Review of Variables](#module-2-13---review-of-variables)
+  * [Module 2-13 - Practice Challenges with Variables, Reassignment, Concatenation, Arithmetic Operators, and Coercion](#module-2-13---practice-challenges-with-variables-reassignment-concatenation-arithmetic-operators-and-coercion)
+- [Module 3 - Conditionals & Logic](#module-3---conditionals--logic)
+  * [Module 3-1 - Intro to Control Structures](#module-3-1---intro-to-control-structures)
+  * [Module 3-2 - if Statement](#module-3-2---if-statement)
+  * [Module 3-2 Assignment - Is It Sunny?](#module-3-2-assignment---is-it-sunny)
+  * [Module 3-3 - Comparison Operators](#module-3-3---comparison-operators)
+  * [Module 3-3 Assignment - Print Larger Value](#module-3-3-assignment---print-larger-value)
+  * [Module 3-4 - else Statement](#module-3-4---else-statement)
+  * [Module 3-4 Assignment - Grading an Assignment](#module-3-4-assignment---grading-an-assignment)
+  * [Module 3-5 elseif Statement](#module-3-5-elseif-statement)
+  * [Module 3-5 Assignment - User Score Responses](#module-3-5-assignment---user-score-responses)
+  * [Module 3-6 - Logical Operators](#module-3-6---logical-operators)
+  * [Module 3-6 Assignment - Grading Test Scores (Advanced)](#module-3-6-assignment---grading-test-scores-advanced)
+  * [Module 3-7 Order of Operations](#module-3-7-order-of-operations)
+  * [Module 3-7 Assignment - Guess the Order of Operations](#module-3-7-assignment---guess-the-order-of-operations)
+  * [Module 3-8 - Changing the Order of Operations](#module-3-8---changing-the-order-of-operations)
+  * [Module 3-8 Assignment - T-shirt or Jacket Weather?](#module-3-8-assignment---t-shirt-or-jacket-weather)
+  * [Module 3-9 - Review of Conditionals and Logic](#module-3-9---review-of-conditionals-and-logic)
+- [Module 4 - Functions](#module-4---functions)
+  * [Module 4-1 - Introduction to Functions](#module-4-1---introduction-to-functions)
+  * [Module 4-2 - Declearing Functions](#module-4-2---declearing-functions)
+  * [Module 4-2 Assignment - Calculate Shopping Total](#module-4-2-assignment---calculate-shopping-total)
+  * [Module 4-3 - Calling a Function](#module-4-3---calling-a-function)
+  * [Module 4-3 Assignment - Calling the Shopping Calculation Function](#module-4-3-assignment---calling-the-shopping-calculation-function)
+  * [Module 4-4 - Parameters and Arguments](#module-4-4---parameters-and-arguments)
+  * [Module 4-4 Assignment - Adding Parameters and Arguments to the Shopping Calculation Function](#module-4-4-assignment---adding-parameters-and-arguments-to-the-shopping-calculation-function)
+  * [Module 4-5 - Returns](#module-4-5---returns)
+  * [Module 4-5 Assignment - Returning the Shopping Total to a Variable](#module-4-5-assignment---returning-the-shopping-total-to-a-variable)
+  * [Module 4-6 - Functions After Returns](#module-4-6---functions-after-returns)
+  * [Module 4-6 Assignment - Guess the Print Statements](#module-4-6-assignment---guess-the-print-statements)
+  * [Module 4-7 - Practice with Functions](#module-4-7---practice-with-functions)
+  * [Module 4-8 - Built-in Lua Functions](#module-4-8---built-in-lua-functions)
+  * [Module 4-8 Assignment - string.len()](#module-4-8-assignment---stringlen)
+  * [Module 4-9 - Review of Functions](#module-4-9---review-of-functions)
 
 ## Module 1 - Introduction to Lua
 
@@ -58,8 +136,6 @@ Though the previous sections in this module do NOT close out multi-line comments
 The key takeaway is the hyphens at the end do nothing. It's the closing brackets that end the multi-line comment. In fact, in their example, they put the end hyphens BEFORE the end closing brackets. Going forward, I plan to either do a they show in this official example or have no hyphens at all at the end for clarity. I completed the assignment with some single line comments up front outlining the script and an example multi-line comment for practice. The results are shown below:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/c310d890-4ef6-44de-b548-03a3655a8107)
-
-# 21 June 2023
 
 ## Module 2 - Variables and Data
 
@@ -363,12 +439,6 @@ I've included my answers to these questions and tackled the code portions of the
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/1591ec85-a300-4598-b847-ab8baf164386)
 
-# 22 June 2023
-
-Traveled to Disney World - I did some reading ahead on the Codecademy GO app.
-
-# 23 June 2023
-
 ## Module 3 - Conditionals & Logic
 
 [Module 3 - Conditionals & Logic](https://www.codecademy.com/learn/learn-lua/modules/conditionals-logic/cheatsheet)
@@ -550,8 +620,6 @@ isHungry and false or friendIsPaying --> false or friendIsPaying --> true
 
 After running the example, I was correct and we got food - which means our code is buggy.
 
-# 24 June 2023
-
 ### Module 3-8 - Changing the Order of Operations
 
 Module 3-8 covers changing the order of operations
@@ -585,17 +653,22 @@ The assignment for this module was to create a script that tells the user whethe
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/0dbf5b19-3fc9-4705-807f-0115cedda298)
 
+### Module 3-9 - Review of Conditionals and Logic
+
 Module 3-9 covers the review of conditionals and logic
 
 A control structure is code that makes a decision based on one or more true / false statements. Conditional statements make up control structures and include if, elseif, and else statements. The first conditional statement to return true breaks out of the code block and the rest will not be checked. A code block is a grouping of code - control structures determine if or when said code will be executed. Boolean expressions are true or false and are used by conditional statements to determine if the code block should be executed. Comparison operators compare values and evaluate to true or false. Logical operators take two boolean variables and evaluate to either true or false. Lua uses an order of operations which can be reassigned using parentheseses. 
 
-## 25 June 2023
-
+## Module 4 - Functions
 [Module 4 - Functions](https://www.codecademy.com/learn/learn-lua/modules/functions/cheatsheet)
+
+### Module 4-1 - Introduction to Functions
 
 Module 4-1 covers the introduction to functions
 
 Functions allow for reusable code without having to repeat it in multiple places. print is an example of a built-in Lua function that allows us to print text without having to recreate it each time. Functions are useful for preventing potential errors from copy-pasting code such as having to make minor corrections with major impacts and extremely lengthy code. This module didn't have an assignment but it did ask the question of what are some example repeated processes I do throughout the day. One example is feeding my dog: open the back door --> step outside --> close the back door --> open dog food container --> scoop food --> pour food into dog bowl --> return scoop to container --> close dog food container --> open back door --> walk inside --> close back door
+
+### Module 4-2 - Declearing Functions
 
 Module 4-2 covers declaring functions
 
@@ -611,15 +684,23 @@ function getArea()
 end
 ~~~
 
+### Module 4-2 Assignment - Calculate Shopping Total
+
 The assignment for this module is to write a function for a shopping app that calculates the total when given a subtotal and tax rate. The results of the script [module-4-2-declaring-functions.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-2-declaring-functions.lua) are an empty console as the function is only declared and not called.
+
+### Module 4-3 - Calling a Function
 
 Module 4-3 covers calling a function
 
 Functions are called with their declared name followed by parentheses like so: getArea() - they must also be called AFTER they are declared.
 
+### Module 4-3 Assignment - Calling the Shopping Calculation Function
+
 The assignment for this module has us start with the script from Module 4-2 and add three calls of our function so that the result is printed three times. The results of the script [module-4-3-calling-functions.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-3-calling-functions.lua) are below:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/db7a32f6-8ccb-4228-92d0-8f2ef0bb1716)
+
+### Module 4-4 - Parameters and Arguments
 
 Module 4-4 covers parameters and arguments
 
@@ -636,21 +717,30 @@ myFunction(myArgument) -- this calls our function with an argument
 
 Functions can have multiple parameters/arguments - they just need to align. By default, lua will use the value nil where our arguments are not covered by parameters.
 
+### Module 4-4 Assignment - Adding Parameters and Arguments to the Shopping Calculation Function
 The assignment for this module was to expand on our previous script by adding parameters for subtotal and taxRate and then calling that function with three different sets of arguments. The results of the script [module-4-4-parameters-and-arguments.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-4-parameters-and-arguments.lua) should be 120, 220, and 500, which they are as shown below:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/dd22db69-18c9-43b8-b3f6-f7992028d809)
+
+### Module 4-5 - Returns
 
 Module 4-5 covers returns
 
 The keyword return allows us to spit out a value when a function is called. It is used from within the the function and allows said value to be used by the rest of the program by assigning the function call to a variable, like so: myVariable = getVariable(arg1)
 
+### Module 4-5 Assignment - Returning the Shopping Total to a Variable
+
 The assignment for this module was to setup our previous script to be able to return the total instead of printing it. Then, the assignment provided some arguments to try printing as well as a finalTotal to sum the previous results to retrieve and print. The results should be 240, 330, and 75, with the finalTotal being 645. The script [module-4-5-returns.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-5-returns.lua) successfully yielded these results as shown below:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/ad90bbe5-f7a8-48b6-a0b6-6be4bacf19bb)
 
+### Module 4-6 - Functions After Returns
+
 Module 4-6 covers functions after returns
 
 Note: after any return occurs, the rest of the function's code will be skippped. This can be useful when understood as it can replace the need of if and else statements.
+
+### Module 4-6 Assignment - Guess the Print Statements
 
 The assignment for this module was to guess which statements would print from the example script without running it, and then running it to confirm. If input in trickyReturns is true, the following letters should print: a, b. If input is false the following letters should print: a, c, d. Running the script and changing input to true and false confirmed these results. The reason for these results is that the function breaks out after the first time it hits return. The example script is provided below, for reference:
 
@@ -672,6 +762,8 @@ end
 trickyReturns(true)
 ~~~
 
+### Module 4-7 - Practice with Functions
+
 Module 4-7 covers practice with functions. 
 
 The script [module-4-7-practice-with-functions.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-7-practice-with-functions.lua) succesfully returned the expected values for each practice problem as shown below:
@@ -684,6 +776,8 @@ The script [module-4-7-practice-with-functions.lua](https://github.com/julch94/l
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/ae1cede5-fa99-42aa-89d1-974f5c4eb5b0)
 
+### Module 4-8 - Built-in Lua Functions
+
 Module 4-8 covers built-in Lua functions
 
 *    string function library
@@ -693,9 +787,13 @@ Module 4-8 covers built-in Lua functions
 
 There are many built-in functions which can be found by browsing through the Lua library at [http://lua-users.org/wiki/TutorialDirectory](http://lua-users.org/wiki/TutorialDirectory).
 
+### Module 4-8 Assignment - string.len()
+
 The assignment for this module was to browse the library for documentation on string.len and then use it to print the length of "Hello there!" in a custom function called printStringLength(). The length should be 12 which as shown in the results of the script [module-4-8-built-in-lua-functions.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-8-built-in-lua-functions.lua) below, was correct.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/6c5fc65d-af7f-44f0-bf95-1ca71a7c7dbf)
+
+### Module 4-9 - Review of Functions
 
 Module 4-9 covers the review of functions
 
@@ -705,7 +803,7 @@ Functions are important for code-writing efficiency, cleanliness, and clarity. F
 
 This concludes my very brief introduction course on Lua. I would next like to take a course going over how Lua is able to work closely with C++ applications, as my understanding is that many video games do this. In short, the codecademy course was OK - it wasn't very transparent on what portions of the course were free, but it provided an in-browswer editor and terminal which were convenient for before I got a hang of creating and running Lua scripts on my own machine. I gained a very elemantary understanding of how to go and make some basic scripts with the language, which works well with my existing understanding of other programming languages.
 
-Some potential resources for learning how to embedd Lua in C++:
+## Some potential resources for learning how to embedd Lua in C++:
 
 [https://www.cs.usfca.edu/~galles/cs420/lecture/LuaLectures/LuaAndC.html](https://www.cs.usfca.edu/~galles/cs420/lecture/LuaLectures/LuaAndC.html)
 
@@ -713,6 +811,7 @@ Some potential resources for learning how to embedd Lua in C++:
 
 [https://www.youtube.com/watch?v=xrLQ0OXfjaI&list=PLLwK93hM93Z3nhfJyRRWGRXHaXgNX0Itk](https://www.youtube.com/watch?v=xrLQ0OXfjaI&list=PLLwK93hM93Z3nhfJyRRWGRXHaXgNX0Itk)
 
+## Additional Ideas for what's next
 Another idea for starting up next instead of jumping into embedding in C++... go and work through the Lua book. Chapter by chapter to get a rough idea of every section.
 
 [https://www.lua.org/pil/contents.html#2](https://www.lua.org/pil/contents.html#2)
