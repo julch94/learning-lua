@@ -538,3 +538,49 @@ The assignment for this module was to expand on our previous script by adding pa
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/dd22db69-18c9-43b8-b3f6-f7992028d809)
 
+Module 4-5 covers returns
+
+The keyword return allows us to spit out a value when a function is called. It is used from within the the function and allows said value to be used by the rest of the program by assigning the function call to a variable, like so: myVariable = getVariable(arg1)
+
+The assignment for this module was to setup our previous script to be able to return the total instead of printing it. Then, the assignment provided some arguments to try printing as well as a finalTotal to sum the previous results to retrieve and print. The results should be 240, 330, and 75, with the finalTotal being 645. The script [module-4-5-returns.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-5-returns.lua) successfully yielded these results as shown below:
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/ad90bbe5-f7a8-48b6-a0b6-6be4bacf19bb)
+
+Module 4-6 covers functions after returns
+
+Note: after any return occurs, the rest of the function's code will be skippped. This can be useful when understood as it can replace the need of if and else statements.
+
+The assignment for this module was to guess which statements would print from the example script without running it, and then running it to confirm. If input in trickyReturns is true, the following letters should print: a, b. If input is false the following letters should print: a, c, d. Running the script and changing input to true and false confirmed these results. The reason for these results is that the function breaks out after the first time it hits return. The example script is provided below, for reference:
+
+~~~
+function trickyReturns(input)
+  print("a")
+  if input then
+    print("b")
+    return "foo!"
+  end
+  print("c")
+  if 2+2 == 4 then
+    print("d")
+    return "boo!"
+  end
+  print("e")
+end
+
+trickyReturns(true)
+~~~
+
+Module 4-7 covers practice with functions. 
+
+The script [module-4-7-practice-with-functions.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-7-practice-with-functions.lua) succesfully returned the expected values for each practice problem as shown below:
+
+*    square(5) = 25
+*    getSmallerValue(5, 10) = 5
+*    getSmallerValue(5, 2) = 2
+*    convertMilesToFeet(26.2) = 138336
+*    getAreaOfRightTriangle(6) = 18
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/ae1cede5-fa99-42aa-89d1-974f5c4eb5b0)
+
+Module 4-8 covers built-in Lua functions
+
