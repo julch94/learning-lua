@@ -2,19 +2,33 @@
 This repo will act as the home of my journey to learn Lua - including my created scripts, notes, and updates on my progress.
 https://www.lua.org/
 
-## 20 June 2023
+# Table of Contents
+
+[Setup](#setting-up-lua-on-windows-10)
+
+# *20 June 2023*
+
+## Setting up Lua on Windows 10
 
 Created [*how_to_setup_lua.txt*](https://github.com/julch94/learning-lua/blob/main/how_to_setup_lua.txt) as I walked through the Lua wiki with steps for setting up on Windows. The process was complex but not all that complicated. I first got Lua working on my laptop while writing this guide, and put them to the test while setting up Lua on my desktop. After setting up on my desktop, I was able to create and test [helloWorld.lua](https://github.com/julch94/learning-lua/blob/main/helloWorld.lua) - a simple "Hello World" script which works! 
 
+## Codecadamy Learn Lua Course
+
 Next up is to start taking the [Codecadamy Learn Lua Course](https://www.codecademy.com/learn/learn-lua). The course has 4 main (free) modules and takes about 8 hours, so 2 hours per module split over about a week. My objective is to complete all scripts outside of the codecadamy browser, on my own machine, and document them (along with their results) on this repo.
+
+## Module 1 - Introduction to Lua
 
 I went ahead and knocked out [Module 1 - Introduction to Lua](https://www.codecademy.com/learn/learn-lua/modules/learn-lua-introduction/cheatsheet). In the first part of this module I created [module-1-3-stacked.lua](https://github.com/julch94/learning-lua/blob/main/Module1/module-1-3-stacked.lua) -  a script that draws a stack of printed numbers displayed in a stacked manner, like so:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/6094e011-4787-4d43-ad38-31b4611a2943)
 
+### Single Line Comments
+
 Next, I learned about single line comments, denoted by two dashes. These can be used on their own line or after a line of code. [module-1-4-single-line-comments.lua](https://github.com/julch94/learning-lua/blob/main/Module1/module-1-4-single-line-comments.lua) was created to show these examples and the output ignores the comments:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/7fbff712-d689-4a9c-a0b8-c6886bc542fc)
+
+### Multi-line Comments
 
 After single line comments came multi-line comments. [module-1-5-multi-line-comments.lua](https://github.com/julch94/learning-lua/blob/main/Module1/module-1-5-multi-line-comments.lua) is a script that comments out several example print statements using multi-line comments. I tested out single line comments, removing some of those, etc. per the module's instructions and then completed the assignment by multi-line commenting all but the 
 
@@ -26,7 +40,13 @@ line. The results are as follows:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/d777df6e-1c22-40f5-be40-7b146bb3085f)
 
-The final assignment of Module 1 was a letter to my future self in [module-1-6-letter-to-self.lua](https://github.com/julch94/learning-lua/blob/main/Module1/module-1-6-letter-to-self.lua). This letter is just simple print statements and comments with my goals, name, and date. Though the previous sections in this module do NOT close out multi-line comments with --, it seems like the recap here wants you to do so. I wondered what was considered best practice and found [**this**](https://www.lua.org/pil/1.3.html) straight from Lua.org. 
+### Module 1-6 Assignment - Letter to Self
+
+The final assignment of Module 1 was a letter to my future self in [module-1-6-letter-to-self.lua](https://github.com/julch94/learning-lua/blob/main/Module1/module-1-6-letter-to-self.lua). This letter is just simple print statements and comments with my goals, name, and date. 
+
+### Module 1 Recap and a note on comment syntax
+
+Though the previous sections in this module do NOT close out multi-line comments with --, it seems like the recap here wants you to do so. I wondered what was considered best practice and found [**this**](https://www.lua.org/pil/1.3.html) straight from Lua.org. 
 
 "A comment starts anywhere with a double hyphen (--) and runs until the end of the line. Lua also offers block comments, which start with --[[ and run until the corresponding ]]. A common trick, when we want to comment out a piece of code, is to write the following:
 
@@ -39,14 +59,25 @@ The key takeaway is the hyphens at the end do nothing. It's the closing brackets
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/c310d890-4ef6-44de-b548-03a3655a8107)
 
-## 21 June 2023
+# 21 June 2023
+
+## Module 2 - Variables and Data
+
 [Module 2 - Variables and Data](https://www.codecademy.com/learn/learn-lua/modules/variables-and-data/cheatsheet)
 
-Module 2-1 starts off going over data types and their purpose, such as representing numbers, text, and truth statements. It also states how the rest of the module will go over the different data types, checking the type of data, and how to manipula the data. Module 2-1 Assignment:
+### Module 2-1 - Data Types and their Purpose
+
+Module 2-1 starts off going over data types and their purpose, such as representing numbers, text, and truth statements. It also states how the rest of the module will go over the different data types, checking the type of data, and how to manipula the data. 
+
+### Module 2-1 Assignment - Real Life Applications of Data Categories
+
+Module 2-1 Assignment:
 
 "Can you think of any other categories of data in real life? What about in the applications you use?"
 
 My response to this is vectors. Vectors use numbers within them but have a precise definition and tons of applications. For example, Unity uses Vector3 to represent an object's position and many other things. There was no coding assignment for Module 2-1.
+
+### Module 2-2 - Basic  and Complex Data Types
 
 Module 2-2 teaches that Lua organizes data into four basic data types:
 
@@ -62,6 +93,8 @@ Additionally, not yet covered here, there are four complex data types:
 
 Tables, Functions, Userdata, and Threads
 
+### Module 2-2 Assignment -  Simple Data Type Printing
+
 The assignment from Module 2-2 was to:
 
 1. First print a number representing how many languages you can speak.
@@ -72,6 +105,8 @@ The assignment from Module 2-2 was to:
 My completed assignment for Module 2-2 is in [module-2-2-simple-data-type-printing.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-2-simple-data-type-printing.lua). Running the script yields this result:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/768edb01-bd00-4d78-a479-4ce45f47cd81)
+
+### Module 2-3 Number and String Syntax
 
 In Module 2-3 the course dives deeper into number and string syntax. 
 
@@ -98,6 +133,8 @@ Key notes include:
 
 This will return string
 
+### Module 2-3 Assignment -  Using the type() Function
+
 The assignment for Module 2-3 was as follows:
 
   1. Pick a number and use type() to print the type of the number picked.
@@ -108,6 +145,8 @@ The assignment for Module 2-3 was as follows:
 The script [module-2-3-using-type-function.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-3-using-type-function.lua) was created to complete this assignment and the results are below:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/58de7df1-f870-4677-8d5f-e368ef613269)
+
+### Module 2-4 - Arithmetic Operators
 
 Module 2-4 covers calculating with arithmetic operators. 
 
@@ -121,6 +160,8 @@ Module 2-4 covers calculating with arithmetic operators.
   
 An expression uses operators to transform data and evaluates to a new value. For example, the express 2+3 evaulates to 5.
 
+### Module 2-4 Assignment - Shopping Calculations
+
 Module 2-4's assignment:
 
 1. Ji-Eun's shopping cart has two items - one priced at $10.95 and the other at $20.99. Add the prices together and print her total.
@@ -133,12 +174,16 @@ The codecademy built-in compiler wanted precisely followed instructions but I wa
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/a53cb368-a615-4aac-b90c-ad8f5bbe5e8a)
 
+### Module 2-5 - Review of Data Types and Operators
+
 Module 2-5 was a review of data types and operators. 
 
 * Basic Data Types: Number, String, Nil, Boolean
 * String: "this" or 'this'
 * Operators: +, -, *, /, ^, %, - (first "-" is subtraction, second is negation)
 * Use the type() function to determine a value's type when needed
+
+### Module 2-5 - Practice Challenges with Data Types and Operators
 
 Additionally, some practice challenges were provided:
 
@@ -150,18 +195,25 @@ The script [module-2-5-reviewing-data-types-and-operators.lua](https://github.co
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/3e00d6fd-5de3-4b5d-a385-ecacde7e048f)
 
+### Module 2-6 - Introduction to Variables
+
 Module 2-6 covers the introduction to variables.
 
 Variables are named containers in memory that allow us to store, retrieve, and manipulate data - similar to a labeled box. The introduction states that this lesson will teach the ins outs of variables by delcaring them, working with the data they contain, and manipulating them with arithmetic operators, reassignment, and concatenation.
+
+### Module 2-6 Assignment - Variable and Data Examples
 
 The assignment for Module 2-6 was to simply think of programs I've used before and what sort of data they would store as variables.
 
 My answer: A League of Legends ability cooldown as a number. This ability's cooldown timer could be reduced by level, skill points in the ability, items with ability haste, runes with ability haste, interactions with other abilities, and likely more. 
 
+### Module 2-7 - Defining Variables
+
 Module 2-7 covers defining variables. 
 
 Basic syntax is: name = value. Example: player1Score = 0. Rather than doing print(0) we could now do print(player1Score) which would also return 0 for now, or whatever player1Score is later reassigned to. Variable names should be succinct but descriptive so that they are easily understood. myValue is not helpful but player1Score is.
 
+### Module 2-7 Assignment - High Score
 The assignment for Module 2-7 was as follows:
 
 1. Declare a variable named player1Name and assign the string value "Kamala" to it.
@@ -169,6 +221,8 @@ The assignment for Module 2-7 was as follows:
 3. Declare a variable named highestScore and assign it nil - there is no high score yet.
 
 The assignment didn't print any of the values so I have simply linked the script [module-2-7-defining-variables.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-7-defining-variables.lua) with no shown results.
+
+### Module 2-8 - Using type() with Variables
 
 Module 2-8 covers uing type() with variables
 
@@ -183,6 +237,8 @@ The actual answers were very close to mine, with a string specifying it's a sequ
 
 After this review, the module states that variables can store any type of data and that we can use type() on those variables. That's actually how I tackled most of the problems in the previous modules. 
 
+### Module 2-8 Assignment - Printing Variables and their Type
+
 The assignment for Module 2-8 was as follows:
 
 1. Create a variable called userName and assign it any string value.
@@ -194,11 +250,13 @@ This script [module-2-8-using-type-with-variables.lua](https://github.com/julch9
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/4ec5113a-836d-495a-9e2f-0c3d42848c7c)
 
+### Module 2-9 - Variable Reassignment
 
 Module 2-9 covers variable reassigment
 
 Variables can be reassigned with values or other variables. For example: legendaryPlayerSocre = 616 and highestScore = legendaryPlayerScore. Lua variables do NOT have a type - you can reassign a value of any data type to a variable. For example, you may have a variable score = 10 that gets increased by 1 later in the script. Changing score's value to "ten" or something like that will break the addition when trying to add a number to a string ("ten" + 1).
 
+### Module 2-9 Assignment - High Score and Name
 The assignment for Module 2-9 was as follows:
 
 1. Enshrine the highestScorerName as "Kamala" below the line stating highestScore = 25.
@@ -210,10 +268,13 @@ This script [module-2-9-variable-reassignment.lua](https://github.com/julch94/le
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/0d95fea1-8542-4211-8eb4-4ea022124233)
 
+### Module 2-10 - Using Arithmetic Operators with Variables
+
 Module 2-10 covers using arithmetic operators with variables
 
 I kind of already knocked this one out during an earlier section as I thought that was the intent. The lesson goes on to review the basic arithmetic operators and using them to reassign the value of a variable - for example: myVariable = myVariable + 1. 
 
+### Module 2-10 Assignment - Modifying Scores
 The assignment for Module 2-10 was as follows:
 
 1. Kamala scores 1 point. Add 1 to the player1Score variable and print it to output the modified value.
@@ -223,6 +284,8 @@ The assignment for Module 2-10 was as follows:
 This script [module-2-10-variables-with-arithmetic-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-10-variables-with-arithmetic-operators.lua) was created to complete the assignment and the results are below:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/c24e9d95-f326-4e5b-ad4b-26b4a04d0836)
+
+### Module 2-11 - Concatenation
 
 Module 2-11 covers concatenation
 
@@ -241,6 +304,8 @@ myName = "Nick"
 print("My name is " .. myName)
 ~~~
 
+### Module 2-11 Assignment - Printing a Player's Name With their Score
+
 The assignment for Module 2-11 was as follows:
 
 1. Combine "The first player is: " with the variable player1Name and print the output.
@@ -250,6 +315,8 @@ The assignment for Module 2-11 was as follows:
 This script [module-2-11-concatenation.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-11-concatenation.lua) was created to complete the assignment and the results are below:
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/89442dd9-7e91-492c-bbf0-b2c72323cd8d)
+
+### Module 2-12 - Type Coercion in Concatenation and Arithmetic Operations
 
 Module 2-12 covers type coercion in concatenation and arithmetic operations
 
@@ -265,20 +332,25 @@ tostring(numApples))
 
 This will output "I have this many apples: 5" with 5 actually being a string being read into the print statement.
 
+### Module 2-12 Assignment - Testing Concatenation and Coercion
+
 The assignment for Module 2-12 was as follows:
 
-1. Use string concatenation to combine "Plyer 1 Score: " and player1Score - print the output.
+1. Use string concatenation to combine "Player 1 Score: " and player1Score - print the output.
 2. Repeat with Player 2.
 3. Verify the type of your combined values by adding the type() function to the outputs of the above.
 4. Add player1Score and player2Score and print it.
-5. Use the concatenation operator to combine player1Score and player2score and print it. How does it differ from using the addition operator?
+5. Use the concatenation operator to combine player1Score and player2Score and print it. How does it differ from using the addition operator?
    
 This script [module-2-12-type-coercion.lua](https://github.com/julch94/learning-lua/blob/main/Module2/module-2-12-type-coercion.lua) was created to complete the assignment and the results are below. Additionally, the answer to #5's question is that it doesn't add the numerical value - it sticks both numbers together so 13 and 15 become 1315.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/c5f69635-f9e8-41da-b3c9-d6b36b853ad4)
 
+### Module 2-13 - Review of Variables
+
 Module 2-13 covers the review of variables, what they are, how they relate to data types, how to define, reassign, concatenate, and coerce them. 
 
+### Module 2-13 - Practice Challenges with Variables, Reassignment, Concatenation, Arithmetic Operators, and Coercion
 The review also contains an some challenges as follows:
 
 1. Think of a program you'd want to make - what type of data should the progam store?
@@ -291,17 +363,25 @@ I've included my answers to these questions and tackled the code portions of the
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/1591ec85-a300-4598-b847-ab8baf164386)
 
-## 22 June 2023
+# 22 June 2023
+
 Traveled to Disney World - I did some reading ahead on the Codecademy GO app.
 
-## 23 June 2023
+# 23 June 2023
+
+## Module 3 - Conditionals & Logic
+
 [Module 3 - Conditionals & Logic](https://www.codecademy.com/learn/learn-lua/modules/conditionals-logic/cheatsheet)
+
+### Module 3-1 - Intro to Control Structures
 
 Module 3-1 covers the intro to control structures
 
 This module describes a control structure as a series of decisions/checks to determine how to proceed. Conditional structures are of conditional statements: If a condition is met, then do X. These can be used to cover complex decision trees. Variables and logical operators are used to evaluate these conditional statements within the control structure.
 
 Following the example provided by the module, today is not a weekday so I get up at 6:30. It is raining  so I will wear a raincoat.k
+
+### Module 3-2 - if Statement
 
 Module 3-2 covers the if statement
 
@@ -318,6 +398,8 @@ end
 
 The code between then and end should be indented for readability.
 
+### Module 3-2 Assignment - Is It Sunny?
+
 The assignment for Module 3-2 is as follows:
 
 1. Adding onto the example, add an if statement with isSunny as the condition, and print a statement when isSunny is true. Note which print statements are executed.
@@ -326,6 +408,8 @@ The assignment for Module 3-2 is as follows:
 For question 1, all of the statements were printed because isSunny evaluated to true. On question 2, however, isSunny was false so "It is sunny outside!" did NOT print but the print statements before and after the if statement did. The results of the script [module-3-2-conditionals-and-logic.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-2-conditionals-and-logic.lua) are below.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/6a8640ef-d659-4682-bf18-d847a9e7ea66)
+
+### Module 3-3 - Comparison Operators
 
 Module 3-3 covers comparison operators
 
@@ -349,9 +433,12 @@ if qabilityManaCost <= currentManaAvailable then
 end
 ~~~
 
+### Module 3-3 Assignment - Print Larger Value
 The assignment for this module was to create a program that initialized numerical values for A and B and then evaluated and printed which one was larger. The results of the script [module-3-3-comparison-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-3-comparison-operators.lua) are below.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/fa72b6ed-af65-4fd6-ae46-fbb1e9821213)
+
+### Module 3-4 - else Statement
 
 Module 3-4 covers the else statement
 
@@ -368,17 +455,24 @@ end
 
 The key note here is that the else is paired with the if and is closed by the same end keyword.
 
+### Module 3-4 Assignment - Grading an Assignment
+
 The assignment from module 3-4 was to create a program for grading an assignment based on a score. The results of the script [module-3-4-else-statement.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-4-else-statement.lua) are below.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/5d0ccb1a-621f-4129-b2b0-f7172cb81ee3)
+
+### Module 3-5 elseif Statement
 
 Module 3-5 covers the elseif statement
 
 elseif is used when we need to check additional options after an initial check. elseif is setup just like an if statement but still lives within the total codeblock as the original if statement, and that codeblock ends with the end keyword. An elseif statement MUST come after an if statement or another elseif statement. Only the first if or elseif that evalutes to true in a codeblock is executed and the rest are skipped.
 
+### Module 3-5 Assignment - User Score Responses
 The assignment for 3-5 was to create a program that prints out a different sentences based on the user's score. The results of the script [module-3-5-elseif-statement.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-5-elseif-statement.lua) are below.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/fc6b7b40-69bc-4f26-918f-e9360c1dd1ca)
+
+### Module 3-6 - Logical Operators
 
 Module 3-6 covers logical operators
 
@@ -389,9 +483,12 @@ Logical operators can be used to combine conditional statements - for example, i
 *    not x - returns true if x is false
 *    Otherwise, these all return false
 
+### Module 3-6 Assignment - Grading Test Scores (Advanced)
 The assignment for module 3-6 was to write a program that grades test scores. I added some extra print statements and an else to catch failing scores, and ran through all planned resulting cases. The results of the script [module-3-6-logical-operators.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-6-logical-operators.lua) are below.
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/7df4a507-e64a-4ad3-81b9-9b3ce3984140)
+
+### Module 3-7 Order of Operations
 
 Module 3-7 covers order of operations
 
@@ -433,6 +530,8 @@ end
 
 This will work as intended and print our message unless score is equal to 100.
 
+### Module 3-7 Assignment - Guess the Order of Operations
+
 The assignment for module 3-7 was to guess at some order of operations for the following code:
 
 ~~~
@@ -451,7 +550,9 @@ isHungry and false or friendIsPaying --> false or friendIsPaying --> true
 
 After running the example, I was correct and we got food - which means our code is buggy.
 
-## 24 June 2023
+# 24 June 2023
+
+### Module 3-8 - Changing the Order of Operations
 
 Module 3-8 covers changing the order of operations
 
@@ -477,6 +578,7 @@ if(cardsInHand > 0) and (ismyTurn or hasInstantSpell) then
 end
 ~~~
 
+### Module 3-8 Assignment - T-shirt or Jacket Weather?
 The assignment for this module was to create a script that tells the user whether it's t-shirt weather or if they need to wear a jacket based on the temperature, if it's cloudy, and if it's rainy. The script [module-3-8-changing-order-of-operations.lua](https://github.com/julch94/learning-lua/blob/main/Module3/module-3-8-changing-order-of-operations.lua) was created for this and the results are below, which match the expected outputs based on the truth table provided by the module (also below).
 
 ![image](https://github.com/julch94/learning-lua/assets/74890109/00f90295-76b9-431d-9cf8-502801052660)
