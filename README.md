@@ -602,3 +602,12 @@ Functions are important for code-writing efficiency, cleanliness, and clarity. F
 ## Conclusion of codecademy Lua intro course
 
 This concludes my very brief introduction course on Lua. I would next like to take a course going over how Lua is able to work closely with C++ applications, as my understanding is that many video games do this. In short, the codecademy course was OK - it wasn't very transparent on what portions of the course were free, but it provided an in-browswer editor and terminal which were convenient for before I got a hang of creating and running Lua scripts on my own machine. I gained a very elemantary understanding of how to go and make some basic scripts with the language, which works well with my existing understanding of other programming languages.
+
+Some potential resources for learning how to embedd Lua in C++:
+
+[https://www.cs.usfca.edu/~galles/cs420/lecture/LuaLectures/LuaAndC.html](https://www.cs.usfca.edu/~galles/cs420/lecture/LuaLectures/LuaAndC.html)
+
+[https://daley-paley.medium.com/super-simple-example-of-adding-lua-to-c-710730e9528a](https://daley-paley.medium.com/super-simple-example-of-adding-lua-to-c-710730e9528a)
+
+[https://www.youtube.com/watch?v=xrLQ0OXfjaI&list=PLLwK93hM93Z3nhfJyRRWGRXHaXgNX0Itk](https://www.youtube.com/watch?v=xrLQ0OXfjaI&list=PLLwK93hM93Z3nhfJyRRWGRXHaXgNX0Itk)
+
