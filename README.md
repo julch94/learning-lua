@@ -611,3 +611,7 @@ Some potential resources for learning how to embedd Lua in C++:
 
 [https://www.youtube.com/watch?v=xrLQ0OXfjaI&list=PLLwK93hM93Z3nhfJyRRWGRXHaXgNX0Itk](https://www.youtube.com/watch?v=xrLQ0OXfjaI&list=PLLwK93hM93Z3nhfJyRRWGRXHaXgNX0Itk)
 
+Another idea for starting up next instead of jumping into embedding in C++... go and work through the Lua book. Chapter by chapter to get a rough idea of every section.
+
+[https://www.lua.org/pil/contents.html#2](https://www.lua.org/pil/contents.html#2)
+
