@@ -493,4 +493,48 @@ A control structure is code that makes a decision based on one or more true / fa
 
 Module 4-1 covers the introduction to functions
 
-In this module...
+Functions allow for reusable code without having to repeat it in multiple places. print is an example of a built-in Lua function that allows us to print text without having to recreate it each time. Functions are useful for preventing potential errors from copy-pasting code such as having to make minor corrections with major impacts and extremely lengthy code. This module didn't have an assignment but it did ask the question of what are some example repeated processes I do throughout the day. One example is feeding my dog: open the back door --> step outside --> close the back door --> open dog food container --> scoop food --> pour food into dog bowl --> return scoop to container --> close dog food container --> open back door --> walk inside --> close back door
+
+Module 4-2 covers declaring functions
+
+Functions are declared like this: function myFunction()
+
+An example of a function is below:
+~~~
+function getArea()
+    length = 10
+    width = 5
+    area = length * width
+    print("The area is " .. area)
+end
+~~~
+
+The assignment for this module is to write a function for a shopping app that calculates the total when given a subtotal and tax rate. The results of the script [module-4-2-declaring-functions.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-2-declaring-functions.lua) are an empty console as the function is only declared and not called.
+
+Module 4-3 covers calling a function
+
+Functions are called with their declared name followed by parentheses like so: getArea() - they must also be called AFTER they are declared.
+
+The assignment for this module has us start with the script from Module 4-2 and add three calls of our function so that the result is printed three times. The results of the script [module-4-3-calling-functions.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-3-calling-functions.lua) are below:
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/db7a32f6-8ccb-4228-92d0-8f2ef0bb1716)
+
+Module 4-4 covers parameters and arguments
+
+Similar to how we add data inside the parentheses of a print() statement, our functions can take inputs (arguments) and interact with the unassigned variables (until they're called) called parameters. So our function assigns our inputs to the parameters. For example:
+
+~~~
+-- Set up our function with a parameter
+myFunction(myParameter)
+    print(myParameter)
+end
+
+myFunction(myArgument) -- this calls our function with an argument
+~~~
+
+Functions can have multiple parameters/arguments - they just need to align. By default, lua will use the value nil where our arguments are not covered by parameters.
+
+The assignment for this module was to expand on our previous script by adding parameters for subtotal and taxRate and then calling that function with three different sets of arguments. The results of the script [module-4-4-parameters-and-arguments.lua](https://github.com/julch94/learning-lua/blob/main/Module4/module-4-4-parameters-and-arguments.lua) should be 120, 220, and 500, which they are as shown below:
+
+![image](https://github.com/julch94/learning-lua/assets/74890109/dd22db69-18c9-43b8-b3f6-f7992028d809)
+
