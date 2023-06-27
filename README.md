@@ -16,7 +16,7 @@ https://www.lua.org/
   *  [Conclusion of codecademy Lua intro course](#conclusion-of-codecademy-lua-intro-course)
 - [Some potential resources for learning how to embedd Lua in C++:](#some-potential-resources-for-learning-how-to-embedd-lua-in-c)
 - [Additional Ideas for what's next](#additional-ideas-for-whats-next)
-- [Convert Markdown Headings to Links](#convert-markdown-headings-to-links)
+- [Convert Markdown Headers to Links](#convert-markdown-headers-to-links)
 
 <!-- TOC end -->
 
