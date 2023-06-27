@@ -818,6 +818,8 @@ Another idea for starting up next instead of jumping into embedding in C++... go
 
 [https://www.lua.org/pil/contents.html#2](https://www.lua.org/pil/contents.html#2)
 
+OR could go and use the community Lua tutorial: [http://lua-users.org/wiki/TutorialDirectory](http://lua-users.org/wiki/TutorialDirectory)
+
 ## Convert Markdown Headers to Links
 
 While putting this README markdown file together I wanted to build a Table of Contents to structure the different resources I learned from and the items within them. I ended up finding an online resource to start with but I knew that this is something Lua was capable of. I was vaguely familiar with regular expressions and knew that Lua's built in string functions would likely be able to get me what I needed. So, with that in mind, I hopped over to ChatGPT to build my own tutorial to teach myself how to build this script. I've created the [markdown-headers-to-links.lua](https://github.com/julch94/learning-lua/blob/main/markdown-headers-to-links.lua) script with fully detailed comments explaining each step of the code.
