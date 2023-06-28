@@ -1,6 +1,6 @@
 ## Codecadamy Learn Lua Course
 
-Next up is to start taking the [Codecadamy Learn Lua Course](https://www.codecademy.com/learn/learn-lua). The course has 4 main (free) modules and takes about 8 hours, so 2 hours per module split over about a week. My objective is to complete all scripts outside of the codecadamy browser, on my own machine, and document them (along with their results) on this repo.
+[Codecadamy Learn Lua Course](https://www.codecademy.com/learn/learn-lua). The course has 4 main (free) modules and takes about 8 hours, so 2 hours per module split over about a week. My objective was to complete all scripts outside of the codecadamy browser, on my own machine, and document them (along with their results) on this markdown file. 
 
 ## Learn Lua Course Syllabus
 - [Module 1 - Introduction to Lua](#module-1---introduction-to-lua)
@@ -68,6 +68,7 @@ Next up is to start taking the [Codecadamy Learn Lua Course](https://www.codecad
   * [Module 4-8 - Built-in Lua Functions](#module-4-8---built-in-lua-functions)
   * [Module 4-8 Assignment - string.len()](#module-4-8-assignment---stringlen)
   * [Module 4-9 - Review of Functions](#module-4-9---review-of-functions)
+- [Conclusion of Codecademy Learn Lua Course](#conclusion-of-codecademy-learn-lua-course)
 
 ## Module 1 - Introduction to Lua
 
@@ -774,6 +775,6 @@ Module 4-9 covers the review of functions
 
 Functions are important for code-writing efficiency, cleanliness, and clarity. Functions containthe function keyword, a name, parameter(s), the return key word, the end key word, and are called using arguments.
 
-## Conclusion of codecademy Lua intro course
+## Conclusion of Codecademy Learn Lua Course
 
 This concludes my very brief introduction course on Lua. I would next like to take a course going over how Lua is able to work closely with C++ applications, as my understanding is that many video games do this. In short, the codecademy course was OK - it wasn't very transparent on what portions of the course were free, but it provided an in-browswer editor and terminal which were convenient for before I got a hang of creating and running Lua scripts on my own machine. I gained a very elemantary understanding of how to go and make some basic scripts with the language, which works well with my existing understanding of other programming languages.
