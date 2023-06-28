@@ -1,4 +1,4 @@
-#how-to-setup-lua
+# how-to-setup-lua
 
 How to setup Lua and run a Hello World script:
 
