@@ -4,13 +4,12 @@ https://www.lua.org/
 
 # Table of Contents
 
-** REPLACE WITH RE-RUN COPY USING SCRIPT**
-
-- [Setting up Lua on Windows 10](#setting-up-lua-on-windows-10)
-- [Codecadamy Learn Lua Course](#codecadamy-learn-lua-course)
-- [Some potential resources for learning how to embed Lua in C++:](#some-potential-resources-for-learning-how-to-embede-lua-in-c)
-- [Additional Ideas for what's next](#additional-ideas-for-whats-next)
-- [Convert Markdown Headers to Links](#convert-markdown-headers-to-links)
+[Setting up Lua on Windows 10](#setting-up-lua-on-windows-10)
+[Codecademy Learn Lua Course](#codecademy-learn-lua-course)
+[Convert Markdown Headers to Links](#convert-markdown-headers-to-links)
+[Lua-Users Tutorial](#lua-users-tutorial)
+[Programming in Lua (First Edition)](#programming-in-lua-(first-edition))
+[Some potential resources for learning how to embed Lua in C++:](#some-potential-resources-for-learning-how-to-embed-lua-in-c++:)
 
 ## Setting up Lua on Windows 10
 
