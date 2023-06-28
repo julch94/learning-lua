@@ -38,10 +38,6 @@ From the Lua website: "This is the online version of the first edition of the bo
 
 After working through the Lua-Users Tutorial, I worked through the entire [Programming in Lua (First Edition) book online](https://www.lua.org/pil/contents.html). My goal was to mostly skim through and briefly review the topics I felt confident in, and take one last swing at the hard stuff. My notes and any example scripts are captured in [programming-in-lua.md](https://github.com/julch94/learning-lua/blob/main/programming-in-lua.md).
 
-[https://www.lua.org/pil/contents.html]
-
-
-
 ## Some potential resources for learning how to embed Lua in C++:
 
 [https://www.cs.usfca.edu/~galles/cs420/lecture/LuaLectures/LuaAndC.html](https://www.cs.usfca.edu/~galles/cs420/lecture/LuaLectures/LuaAndC.html)
