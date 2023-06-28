@@ -54,7 +54,7 @@
   * [Module 3-9 - Review of Conditionals and Logic](#module-3-9---review-of-conditionals-and-logic)
 - [Module 4 - Functions](#module-4---functions)
   * [Module 4-1 - Introduction to Functions](#module-4-1---introduction-to-functions)
-  * [Module 4-2 - Declearing Functions](#module-4-2---declearing-functions)
+  * [Module 4-2 - Declaring Functions](#module-4-2---declaring-functions)
   * [Module 4-2 Assignment - Calculate Shopping Total](#module-4-2-assignment---calculate-shopping-total)
   * [Module 4-3 - Calling a Function](#module-4-3---calling-a-function)
   * [Module 4-3 Assignment - Calling the Shopping Calculation Function](#module-4-3-assignment---calling-the-shopping-calculation-function)
@@ -644,7 +644,7 @@ Module 4-1 covers the introduction to functions
 
 Functions allow for reusable code without having to repeat it in multiple places. print is an example of a built-in Lua function that allows us to print text without having to recreate it each time. Functions are useful for preventing potential errors from copy-pasting code such as having to make minor corrections with major impacts and extremely lengthy code. This module didn't have an assignment but it did ask the question of what are some example repeated processes I do throughout the day. One example is feeding my dog: open the back door --> step outside --> close the back door --> open dog food container --> scoop food --> pour food into dog bowl --> return scoop to container --> close dog food container --> open back door --> walk inside --> close back door
 
-### Module 4-2 - Declearing Functions
+### Module 4-2 - Declaring Functions
 
 Module 4-2 covers declaring functions
 
