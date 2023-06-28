@@ -14,7 +14,7 @@ https://www.lua.org/
   *  [Module 3 - Conditionals & Logic](#module-3---conditionals--logic)
   *  [Module 4 - Functions](#module-4---functions)
   *  [Conclusion of codecademy Lua intro course](#conclusion-of-codecademy-lua-intro-course)
-- [Some potential resources for learning how to embedd Lua in C++:](#some-potential-resources-for-learning-how-to-embedd-lua-in-c)
+- [Some potential resources for learning how to embed Lua in C++:](#some-potential-resources-for-learning-how-to-embede-lua-in-c)
 - [Additional Ideas for what's next](#additional-ideas-for-whats-next)
 - [Convert Markdown Headers to Links](#convert-markdown-headers-to-links)
 
@@ -804,7 +804,7 @@ Functions are important for code-writing efficiency, cleanliness, and clarity. F
 
 This concludes my very brief introduction course on Lua. I would next like to take a course going over how Lua is able to work closely with C++ applications, as my understanding is that many video games do this. In short, the codecademy course was OK - it wasn't very transparent on what portions of the course were free, but it provided an in-browswer editor and terminal which were convenient for before I got a hang of creating and running Lua scripts on my own machine. I gained a very elemantary understanding of how to go and make some basic scripts with the language, which works well with my existing understanding of other programming languages.
 
-## Some potential resources for learning how to embedd Lua in C++:
+## Some potential resources for learning how to embed Lua in C++:
 
 [https://www.cs.usfca.edu/~galles/cs420/lecture/LuaLectures/LuaAndC.html](https://www.cs.usfca.edu/~galles/cs420/lecture/LuaLectures/LuaAndC.html)
 
@@ -825,3 +825,8 @@ OR could go and use the community Lua tutorial: [http://lua-users.org/wiki/Tutor
 While putting this README markdown file together I wanted to build a Table of Contents to structure the different resources I learned from and the items within them. I ended up finding an online resource to start with but I knew that this is something Lua was capable of. I was vaguely familiar with regular expressions and knew that Lua's built in string functions would likely be able to get me what I needed. So, with that in mind, I hopped over to ChatGPT to build my own tutorial to teach myself how to build this script. I've created the [convert-markdown-headings-to-links.lua](https://github.com/julch94/learning-lua/blob/main/convert-markdown-headings-to-links.lua) script with fully detailed comments explaining each step of the code.
 
 The [HeadingLinks.txt](https://github.com/julch94/learning-lua/blob/main/HeadingLinks.txt) file contains the results of the above script being run against this README.md file. All future Table of Contents work will use this script to generate the links from the markdown file.
+
+## Lua-Users Tutorial
+I am going to create a separate markdown file for each source of learning on my journey to learn Lua, meaning I am going to go back and split most of the content above this into 2 or 3 files which will link back to this main file. After setting this up, I will create a new markdown file for the Lua-Users Tutorial which I will structure with a section per tutorial, starting with LuaTypesTutorial. I need to also go and clean out "future plans" above and make real actions for what's next if anything outside of this tutorial. ALSO - need to go and re-run the markdown TOC generator script after cleaning this all out.
+
+Go here: [http://lua-users.org/wiki/TutorialDirectory](http://lua-users.org/wiki/TutorialDirectory)
