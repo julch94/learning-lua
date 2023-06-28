@@ -39,7 +39,7 @@ http://lua-users.org/wiki/BuildingLuaInWindowsForNewbies
 
 - In the working folder, create a new text file and open it. Paste the following contents in, however, you must change the line near the beginning of the text "set lua_version=5.4.6" to instead reflect your Lua version - here, it is 5.4.6.
 
-
+~~~
 @echo off
         :: ========================
         :: file build.cmd
@@ -91,7 +91,7 @@ http://lua-users.org/wiki/BuildingLuaInWindowsForNewbies
         echo.
 
         pause
-
+~~~
 
 - Now, save that text as build.cmd and it will turn into a windows shell script. Double click to run it. A window will pop up and may take a moment to finish processing. Close the window once it's finished
 
