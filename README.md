@@ -4,15 +4,13 @@ https://www.lua.org/
 
 # Table of Contents
 
-<!-- TOCs generated with https://github.com/derlin/bitdowntoc) -->
+** REPLACE WITH RE-RUN COPY USING SCRIPT**
 
 - [Setting up Lua on Windows 10](#setting-up-lua-on-windows-10)
 - [Codecadamy Learn Lua Course](#codecadamy-learn-lua-course)
 - [Some potential resources for learning how to embed Lua in C++:](#some-potential-resources-for-learning-how-to-embede-lua-in-c)
 - [Additional Ideas for what's next](#additional-ideas-for-whats-next)
 - [Convert Markdown Headers to Links](#convert-markdown-headers-to-links)
-
-<!-- TOC end -->
 
 ## Setting up Lua on Windows 10
 
@@ -38,11 +36,11 @@ The [Lua-Users Tutorial](http://lua-users.org/wiki/TutorialDirectory) is the clo
 
 From the Lua website: "This is the online version of the first edition of the book Programming in Lua, a detailed and authoritative introduction to all aspects of Lua programming written by Lua's chief architect. The first edition was aimed at Lua 5.0. It remains largely relevant for later versions, but there are some differences. All corrections listed in the errata have been made in the online version."
 
-After working through the Lua-Users Tutorial, I worked through the entire Programming in Lua (First Edition) book online. My goal was to mostly skim through and briefly review the topics I felt confident in, and take one last swing at the hard stuff.  
+After working through the Lua-Users Tutorial, I worked through the entire [Programming in Lua (First Edition) book online](https://www.lua.org/pil/contents.html). My goal was to mostly skim through and briefly review the topics I felt confident in, and take one last swing at the hard stuff. My notes and any example scripts are captured in [programming-in-lua.md](https://github.com/julch94/learning-lua/blob/main/programming-in-lua.md).
 
-[https://www.lua.org/pil/contents.html](https://www.lua.org/pil/contents.html)
+[https://www.lua.org/pil/contents.html]
 
-[programming-in-lua.md](https://github.com/julch94/learning-lua/blob/main/programming-in-lua.md)
+
 
 ## Some potential resources for learning how to embed Lua in C++:
 
