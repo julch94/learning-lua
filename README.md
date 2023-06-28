@@ -8,7 +8,7 @@ https://www.lua.org/
 [Codecademy Learn Lua Course](#codecademy-learn-lua-course)
 [Convert Markdown Headers to Links](#convert-markdown-headers-to-links)
 [Lua-Users Tutorial](#lua-users-tutorial)
-[Programming in Lua (First Edition)](#programming-in-lua-(first-edition))
+[Programming in Lua First Edition](#programming-in-lua-first-edition)
 [Some potential resources for learning how to embed Lua in C++:](#some-potential-resources-for-learning-how-to-embed-lua-in-c++:)
 
 ## Setting up Lua on Windows 10
@@ -31,7 +31,7 @@ The [HeadingLinks.txt](https://github.com/julch94/learning-lua/blob/main/Heading
 
 The [Lua-Users Tutorial](http://lua-users.org/wiki/TutorialDirectory) is the closest thing to an official guide on learning Lua. I wanted more of a course structure for my introduction to the Lua language so I saved this for second. My goal was to mostly skim over the topics I learned with detail on the Codecademy course, and really dive into the new stuff. My notes and any example scripts are captured in [lua-users-tutorial.md](https://github.com/julch94/learning-lua/blob/main/lua-users-tutorial.md).
 
-## Programming in Lua (First Edition)
+## Programming in Lua First Edition
 
 From the Lua website: "This is the online version of the first edition of the book Programming in Lua, a detailed and authoritative introduction to all aspects of Lua programming written by Lua's chief architect. The first edition was aimed at Lua 5.0. It remains largely relevant for later versions, but there are some differences. All corrections listed in the errata have been made in the online version."
 
