@@ -70,7 +70,7 @@ The last part of this section is regarding being able to query the type of a par
 	dog   string
 
 ## Assignment
-
+test
 ## Numbers
 
 ## Strings
