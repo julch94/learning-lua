@@ -41,6 +41,7 @@ Placeholder for notes and scripts while working through the Lua-Users Tutorial
 ## Lua Types
 
 Lua types include:
+
 	* Numbers - myNumber = 2
 	* Strings - myString = "hello"
 	* Boolean - myBool = true
