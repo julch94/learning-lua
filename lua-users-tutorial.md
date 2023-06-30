@@ -70,7 +70,45 @@ The last part of this section is regarding being able to query the type of a par
 	dog   string
 
 ## Assignment
-test
+
+An assignment is the setting of a variable's value, such as length = 5. Lua also allows us to do multiple assignments in a single statements by separating them with commas. For example, we can set length = 5 and width = 10 with a single statement like this:
+
+	length, width = 5, 10
+
+Multiple assignments can be done with as many variables as desired and they do NOT have to be the same type:
+
+ 	skillName, baseCooldown, baseDamage = "Rooster Man", 5, 50
+
+Assignments can also be expressions such as timeRemaining = timeRemaining - 1. It's important to note that the order of multiple assignments is not defined so a variable should not be assigned twice in the same line like:
+
+	-- Don't do this:
+ 	myBadVar, myBadVar = 4, 12 -- myBadVar could end up being 4 or 12
+
+If expressions are used in a multipe assignment statement, all expressions are evaluated prior to the assignments. For example:
+
+	timeRemaining = 5
+	timeRemaining, cooldown = timeRemaining-1, timeRemaining
+
+ This would evaluate to:
+
+ 	timeRemaining, cooldown = 4, 5
+
+Values an also be swapped around as assignments are treated as simultaneous. Rather than needing to use placeholder variables, we can do:
+
+	team1, team2 = "Offense", "Defense"
+ 	team1, team2 = team2, team1
+
+This will swap the values of team1 and team2. 
+
+Lua handles mismatched list sizes as follows:
+
+	-- variable list < value list
+	var1, var2, = "test1", "test2", "test3" -- extra values ("test3") ignored
+
+	-- variable list > value list
+	var1, var2, var3 = "test1", "test2" -- nil value assigned to extra variables (var3)
+	
+
 ## Numbers
 
 ## Strings
