@@ -2,102 +2,94 @@
 -- convert-markdown-headings-to-links.lua
 -- 26 June 2023
 
+
+
 --[[
-	This script was developed by outlining the desired functions to ChatGPT and instructing the tool to develop a script along with steps for creating said script. This script was NOT directly created by ChatGPT, but instead was developed by following the tutorial mentioned above with my own interpretation
+	This script was developed by outlining the desired functions to ChatGPT and instructing the tool to develop a script along with steps for creating said script. This script was NOT directly created by ChatGPT, but instead was developed by following the tutorial mentioned above with my own interpretation and skills gained from learning Lua.
 	
-	This script is also to supposed to serve as a guide for the many pieces within the script as I am still learning Lua and have yet to done any file I/O or major script manipulation.
+	This script is also supposed to serve as a guide for the many pieces within the script as I am still learning Lua and this was my first experience implementing File I/O and real text parsing and manipulation using regex.
 	
-	To use this script: replace inputFilename and outputFilename with the file path for the desired Markdown file to be processed and txt file to be output to and then run this script. It will print the results to the terminal. NOTE: the output file will be created if it doesn't exist.
+	To use this script, replace inputFilename and outputFilename with the file path for the desired Markdown file to be processed and txt file to be output to and then run this script. It will print the results to the terminal. NOTE: the output file will be created if it doesn't exist.
 --]]
 
 
-local inputFilename = "lua-users-tutorial.md"  -- Replace with your Markdown file's name
-local outputFilename = "table_of_contents.txt"  -- Replace with the desired output file name
+
+-- Functional overview:
+
+-- This script contains three main functions: getHeadings, printTOC, and saveTOC
+-- This script collects the Input File and Output File, builds the three main functions, and finally it executes them to convert our markdown headings from an input markdown file to links in an output text file, ready to be used for a Table of Contents
+
+-- getHeadings
+	-- This function goes and opens the markdown file in read-only and extract the headings using a regex pattern of ^(#+)%s*(.+)$, determines what level of heading it is, and formats appropriately to be inserted into our headings table
+
+-- printTOC
+	-- This function uses the headings table to print out each heading so we can see the results in the command-line interface (CLI)
+
+-- saveTOC
+	-- This function saves the results of the headings table and outputs them to the desired file
+	
 
 
-local function collectHeadings(filename)
-  local file = io.open(filename, "r")
-  if not file then
-    return nil
-  end
+-- File I/O here - can replace values for your use
+local inputFileName = "lua-users-tutorial.md"
+local outputFileName = "table_of_contents.txt"
 
-  local headings = {}
-  local currentHeading = nil
 
-  for line in file:lines() do
-    local hashCount, heading = line:match("^(#+)%s+(.+)$")
-    if hashCount and heading then
-      local headingLevel = string.len(hashCount)
-      if headingLevel == 2 or headingLevel == 3 then
-        local formattedHeading = string.rep("  ", headingLevel - 2) .. " [" .. heading .. "](#" .. string.lower(heading:gsub("%s+", "-")) .. ")"
-        table.insert(headings, formattedHeading)
-      end
-    end
-  end
 
-  file:close()
-  return headings
+-- Functions
+local function getHeadings(fileName)
+	local file = io.open(fileName, "r")
+	if not file then
+		return nil -- error message handled under function call
+	end
+
+	local headings = {} -- initialize empty table
+	
+	for line in file:lines() do
+		local numHashes, heading = line:match("^(#+)%s+(.+)$") --  regex for markdown heading plus the text in it
+		if numHashes and heading then -- if our regex is a match
+			local headingLevel = string.len(numHashes) -- heading level is equal to the number of hashes
+			if headingLevel == 2 or headingLevel == 3 then 
+				local link = string.rep("  ", headingLevel - 2) .. " [" .. heading .. "](#" .. string.lower(heading:gsub("%s+", "-")) .. ")" -- create our markdown link from the heading text
+				table.insert(headings, link) -- create our headings table (aka Table of Contents) with each link we've created
+			end
+		end
+	end
+	
+	file:close()
+	return headings
 end
 
-
-local function printTableOfContents(headings)
+local function printTOC(headings)
   print("Table of Contents:")
-  for _, heading in ipairs(headings) do
+  for _, heading in ipairs(headings) do -- print each heading link in TOC line by line
     print(heading)
   end
 end
 
-local function saveTableOfContentsToFile(headings, outputFilename)
-  local file = io.open(outputFilename, "w")
-  if not file then
-    print("Failed to open the file for writing.")
-    return
-  end
-
-  file:write("Table of Contents:\n")
-  for _, heading in ipairs(headings) do
-    file:write(heading .. "\n")
-  end
-
-  file:close()
-  print("Table of Contents saved to:", outputFilename)
+local function saveTOC(headings, fileName)
+	local file = io.open(fileName, "w")
+	if not file then
+		print("Failed to open Output File: ", file)
+		return
+	end
+	
+	file:write("Table of Contents: \n")
+	for _, heading in ipairs(headings) do	
+		file:write(heading .. "\n")
+	end
+	
+	file:close()
+	print("Table of Contents saved to:", fileName)	
 end
 
-local headings = collectHeadings(inputFilename)
-if headings then
-  printTableOfContents(headings)
-  saveTableOfContentsToFile(headings, outputFilename)
+
+
+-- System
+local headings = getHeadings(inputFileName)
+if headings then 
+	printTOC(headings)
+	saveTOC(headings, outputFileName)
 else
-  print("Failed to open the file:", inputFilename)
+	print("Failed to open Input File: ", inputFileName)
 end
-
---[[
-
-Collecting Headings
-- The `collectHeadings` function reads the Markdown file line by line and extracts the headings.
-- The function opens the file using `io.open` with the provided filename in read mode (`"r"`).
-- It then initializes an empty table called `headings` to store the collected headings.
-- The `for` loop iterates over each line in the file using `file:lines()`.
-- The line is matched against the pattern `^(#+)%s*(.+)$`, which captures the hash symbols (`#+`) and the heading text (`.+`).
-- If a match is found and both the hash count and heading text are present, the headingLevel of the heading is determined by the length of the hash count.
-- If the headingLevel is 2 or 3 (indicating a two or three hash count), the heading is formatted as a Markdown link using the `string.rep` function to add indentation based on the heading headingLevel.
-- The formatted heading is then inserted into the `headings` table using `table.insert`.
-
-Printing the Table of Contents
-- The `printTableOfContents` function takes the `headings` table as input and prints the Table of Contents to the console.
-- It iterates over each heading in the `headings` table using `ipairs`.
-- The `print` function is used to display each heading.
-
-Saving the Table of Contents to a File
-- The `saveTableOfContentsToFile` function takes the `headings` table and an output filename as input.
-- It opens the specified file in write mode (`"w"`) using `io.open`.
-- If the file fails to open, it displays an error message and returns.
-- It writes the Table of Contents header and each heading to the file using the `file:write` function.
-- Finally, it closes the file and displays a success message.
-
-Running the Script
-- The script calls the `collectHeadings` function to collect the headings from the input Markdown file.
-- If the headings are successfully collected, it calls the `printTableOfContents` function to display the Table of Contents on the console.
-- It then prompts the user to enter the desired output filename and calls the `saveTableOfContentsToFile` function to save the Table of Contents to a file.
-
---]]
