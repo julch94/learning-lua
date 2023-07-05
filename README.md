@@ -27,13 +27,6 @@ While putting this README markdown file together I wanted to build a Table of Co
 
 The [HeadingLinks.txt](https://github.com/julch94/learning-lua/blob/main/HeadingLinks.txt) file contains the results of the above script being run against this README.md file. All future Table of Contents work will use this script to generate the links from the markdown file.
 
-### Future Improvement Ideas
-
-1. Add an empty line between each link so it formats properly.
-2. Ignore the first two headings (title and TOC)
-3. Add formatting? asterisk on major headings and indented hyphens for subheadings. Can just add additional indents per subsubheading.
-4. Instead of just converting them to links, what if we created an actual Table of Contents in the file we pulled from? So after creating the list of links we format the end result. Then, what if we could also have the script auto update a markdown file? Maybe it ignores all lines above the end of the table of contents when generating and then it wipes out was there and replaces it with the new data?
-
 ## Lua-Users Tutorial
 
 The [Lua-Users Tutorial](http://lua-users.org/wiki/TutorialDirectory) is the closest thing to an official guide on learning Lua. I wanted more of a course structure for my introduction to the Lua language so I saved this for second. My goal was to mostly skim over the topics I learned with detail on the Codecademy course, and really dive into the new stuff. My notes and any example scripts are captured in [lua-users-tutorial.md](https://github.com/julch94/learning-lua/blob/main/lua-users-tutorial.md).
@@ -42,7 +35,7 @@ The [Lua-Users Tutorial](http://lua-users.org/wiki/TutorialDirectory) is the clo
 
 From the Lua website: "This is the online version of the first edition of the book Programming in Lua, a detailed and authoritative introduction to all aspects of Lua programming written by Lua's chief architect. The first edition was aimed at Lua 5.0. It remains largely relevant for later versions, but there are some differences. All corrections listed in the errata have been made in the online version."
 
-After working through the Lua-Users Tutorial, I worked through the entire [Programming in Lua (First Edition) book online](https://www.lua.org/pil/contents.html). My goal was to mostly skim through and briefly review the topics I felt confident in, and take one last swing at the hard stuff. My notes and any example scripts are captured in [programming-in-lua.md](https://github.com/julch94/learning-lua/blob/main/programming-in-lua.md).
+After working through the Lua-Users Tutorial, I aim to work through the entire [Programming in Lua (First Edition) book online](https://www.lua.org/pil/contents.html). My goal is to mostly skim through and briefly review the topics I feel confident in, and take one last swing at the hard stuff. My notes and any example scripts are captured in [programming-in-lua.md](https://github.com/julch94/learning-lua/blob/main/programming-in-lua.md).
 
 ## Some potential resources for learning how to embed Lua in Cpp:
 
