@@ -106,14 +106,95 @@ Lua handles mismatched list sizes as follows:
 	var1, var2, = "test1", "test2", "test3" -- extra values ("test3") ignored
 
 	-- variable list > value list
-	var1, var2, var3 = "test1", "test2" -- nil value assigned to extra variables (var3)
-	
+	var1, var2, var3 = "test1", "test2" -- nil value assigned to extra variables (var3)	
 
 ## Numbers
 
+Lua, by default, only supports double floating point floating point numbers, however, Lua can be recompiled to support single precision floating point numbers, as well. The key note with this is that numbers may have rounding errors, so using the == operator is unwise with numbers. With this, rounding error stack-up should be minded unless the numbers are integers and less than 2^53.
+
+Numbers use basic operators ( = 1 + 2  will result in 3) and can also be represented using exponents such as 1.23E4 or 1.23e4.
+
+An example of using operators with numbers could be to print the area of a rectangle:
+
+	width = 6
+ 	length = 8
+  	area  width * length
+   	print(area) -- will print 48
+
+Lua also has a math library with many common math functions including:
+
+	math.abs     math.acos    math.asin       math.atan    math.atan2
+	math.ceil    math.cos     math.cosh       math.deg     math.exp
+	math.floor   math.fmod    math.frexp      math.ldexp   math.log
+	math.log10   math.max     math.min        math.modf    math.pow
+	math.rad     math.random  math.randomseed math.sin     math.sinh
+	math.sqrt    math.tan     math.tanh
+
+Strings can also be converted to numbers using the tonumber() function whose argument is a string and returns the number type version of that value. 
+
+	x = tonumber("55") + 45
+ 	print(x) -- will print 100
+
+However, Lua does attempt to do this automatically using coercion so 100 + "5" should return 105 automatically. Take special consideration when using automatic coercion as it does not work when used with comparison operators (55 == "55" will return false). There are also potential performance impacts when coercion is used too much so they should be kept out of loops.
+
 ## Strings
 
+Lua has one type of text - strings. Strings are enclosed in single or double quotes or double square brackets like so:
+
+ 	"string"
+  	'string'
+   	[[string]]
+
+These different formats are convenient when you need to use one of these characters in a string.
+
+Lua can also handle escape sequences using \ for general escape, \n for a new line, and \t for a tab. Note that these do NOT work when using double brackets for your string. 
+
+Double bracket strings can be used for strings that cover multiple lines and for nesting quotes (though this requires at least one set of = in the outer-most brackets).
+
+	-- multiline quote example
+ 	[[This is an example of 
+  	a string that covers
+   	multiple lines.]]
+
+    	-- nested quote example
+     	[=[first string [[second string]] third string]=]
+
+There are more intricacies with nested quotes though they don't seem too useful to spend too much time playing with for now.
+
+String concatenation is done using the .. operator
+
+	myString = "hello" .. "world"	-- returns "hello world"
+
+This also works with numbers using automatic coercion. String concatenation may use a large amount of memory or suffers from slow calculations. This tradeoff must be considered when done in large batches.
+
+Lua also has a string library which is expanded on in the String Library tutorial. The string.find() function is especially common and handy.
+
+Just like numbers, strings use coercion automatically as needed, for example:
+
+	print("I am " .. 28 " years old") -- this will print "I am 28 years old"
+
+ This has some built-in assumptions with no control. A function from the string library, string.format() can be used if needed:
+
+ 	string.format("%.2f", 3.141592654) -- returns 3.14 (only the first 2 digits after the decimal ponit)
+
 ## Operators
+
+Operators in Lua can be categorized as follows:
+
+	- Arithmetic Operators
+ 		+, -, *, /, %, ^
+   	- Relational operators
+    		==, ~=, >, <, <=, >=
+      		Coercion does not work with these
+      	- Logical Operators
+       		and, or, not
+	 	Note that anything not nil or false is true, including 0.
+	- Ternary Operators
+ 		Not built into Lua but can be worked around using and and or:
+   			myValue = myCondition and valueWhenTrue or valueWhenFalse;
+      			-- interpreted as myValue = (myCondition and valueWhenTrue) or valueWhenFalse;
+
+  There are more intricacies when working with different types and evaluating using operators, however, these special applications are clearly documented in the Lua official documentation.	
 
 ## Control Structure
 
